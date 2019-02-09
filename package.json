@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@types/react": "^16.8.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "customize-cra": "^0.2.11",
+    "mobx": "^5.9.0",
+    "mobx-react": "^5.4.3",
     "react": "^16.8.1",
+    "react-app-rewired": "^2.1.0",
     "react-dom": "^16.8.1",
     "react-scripts": "2.1.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

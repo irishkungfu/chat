@@ -1,28 +1,29 @@
 import React, { Component } from "react";
+import styled from 'styled-components';
 
-const chatHeaderWrapper = {
-    borderBottom: "1px black solid",
-    position: "absolute",
-    width: "100%",
-    padding: "1rem",
-    background: "white",
-    textAlign: "center",
-}
+const ChatHeaderWrapper = styled.div`
+    border-bottom: 1px black solid;
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    text-align: center;
+`
 
 class ChatHeader extends Component {
-    componentDidMount() {
-        this.props.store.updateChatHeaderHeight(this.chatHeaderWrapper.clientHeight)
-        console.log(this.props.store.chatHeaderHeight)
 
+    componentDidMount() {
+        this.props.store.updateHeight(this.ChatHeaderWrapper.clientHeight, "input")
+
+        // this.props.store.updateChatHeaderHeight(this.ChatHeaderWrapper.clientHeight)
     }
     render() {
         return (
-            <div
-                ref={(chatHeaderWrapper) => this.chatHeaderWrapper = chatHeaderWrapper}
-                style={chatHeaderWrapper}
+            <ChatHeaderWrapper
+                ref={(ChatHeaderWrapper) => this.ChatHeaderWrapper = ChatHeaderWrapper}
             >
                 Chat Tron 2000
-                </div>
+                </ChatHeaderWrapper>
         )
     }
 }

@@ -1,5 +1,5 @@
 
-import { observable, action, runInAction } from "mobx"
+import { observable, action, flow } from "mobx"
 
 
 import MessageModel from "./MessageModel"
@@ -8,7 +8,6 @@ export default class MessageListModel {
 
     @observable messages = [];
     @observable newMessage = ""
-    @observable receivedMessage = {}
     @observable awaitingMessage = "done"
     @observable chatInputHeight = 50 // base value, calculated value will override
     @observable chatHeaderHeight = 50 // base value, calculated value will override
@@ -40,56 +39,43 @@ export default class MessageListModel {
      */
     @action
     addMessage(messageBody, isSender = false, messageType = "text") {
-        console.log(`isSender = ${isSender} | typeof = ${typeof isSender}`)
-        if (typeof isSender === "boolean") {
-            this.messages.push(new MessageModel(messageBody, isSender, messageType))
-        } else {
-            throw "Parameter isSender is an invalid type"
-        }
+        this.messages.push(new MessageModel(messageBody, isSender, messageType))
     }
     @action
     clearMessage() {
         this.newMessage = "";
     }
+
     @action
-    sendMessage(messageBody, messageType) {
+    sendMessage = flow(function* (messageBody, messageType) {
         this.addMessage(messageBody, true, messageType)
-        this.fetchNewMessage(Math.floor(Math.random() * 50) + 1)
         this.clearMessage()
-    }
+        try {
+            const res = yield this.fetchNewMessage(Math.floor(Math.random() * 50) + 1)
+            let data = yield res.json();
+            return data
+        } catch (error) {
+            this.awaitingMessage = "error"
+            return error
+        }
+    })
     /**
-     * 
-     * @param {object} data 
-     * expected shape of data { messageBody: string, messageType: string}
-     */
-    @action
-    receiveMessage(data) {
-        // will contain logic for parsing responses, i.e. if component is type
-        this.addMessage(data.messageBody, false, data.messageType)
-        this.awaitingMessage = "done"
-    }
-    /**
-     * sample async call
+     * fetch messages async call
      * @param {int} id 
      */
     @action
-    async fetchNewMessage(id) {
-        this.receivedMessage = {}
+    fetchNewMessage = flow(function* (id) {
         this.awaitingMessage = "pending"
+
         try {
-            const res = await fetch(`http://localhost:3000/messages/${id}`)
-            let data = await res.json();
-            // after await, modifying state again, needs an actions:
-            runInAction(() => {
-                setTimeout(() => {
-                    this.receiveMessage(data)
-                }, 1000);
-            })
+            const res = yield fetch(`http://localhost:3000/messages/${id}`)
+            let data = yield res.json();
+            this.addMessage(data.messageBody, false, data.messageType)
+            this.awaitingMessage = "done"
+            return data
         } catch (error) {
-            runInAction(() => {
-                console.log(error)
-                this.awaitingMessage = "error"
-            })
+            this.awaitingMessage = "error"
+            return error
         }
-    }
+    })
 }

@@ -1,6 +1,6 @@
 import { observable } from "mobx"
 export default class MessageModel {
-    id = Math.random()
+    id
     @observable messageBody
     isSender
     messageType
@@ -10,9 +10,35 @@ export default class MessageModel {
      * @param {bool} isSender 
      * @param {string} messageType // text, component, list - default text
      */
-    constructor(messageBody, isSender, messageType) {
-        this.messageBody = messageBody
-        this.isSender = isSender || false
-        this.messageType = messageType || "text"
+    validateMessageType(type) {
+        switch (type) {
+            case "text":
+                return "text"
+            default:
+                console.warn("Invalid messageType using 'text' as fallback");
+                return "text"
+        }
+    }
+    validateIsSender(value) {
+        if (typeof value !== typeof true) {
+            console.warn(value)
+            console.warn("isSender is the wrong data type, defaulting to true")
+            return true
+        }
+        return value
+
+    }
+    validateMessageBody(message) {
+        if (typeof message === typeof "string") {
+            return message
+        }
+        console.warn('invalid message type')
+        return ("I'm sorry, but the message is not of type 'string'")
+    }
+    constructor(messageBody, isSender = false, messageType = "text", debugID) {
+        this.id = debugID ? debugID : Math.random()
+        this.messageBody = this.validateMessageBody(messageBody)
+        this.isSender = this.validateIsSender(isSender)
+        this.messageType = this.validateMessageType(messageType)
     }
 }

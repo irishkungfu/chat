@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from 'styled-components';
-import { observer, inject } from "mobx-react";
+import { observer } from "mobx-react";
+import { func, shape } from 'prop-types'
 
 
 const ChatHeaderWrapper = styled.div`
@@ -13,8 +14,13 @@ const ChatHeaderWrapper = styled.div`
 `
 
 @observer
-class ChatHeader extends Component {
 
+class ChatHeader extends Component {
+    static propTypes = {
+        store: shape({
+            updateHeight: func,
+        }).isRequired,
+    }
     componentDidMount() {
         this.props.store.updateHeight(this.headerWrapper.clientHeight, "header")
     }

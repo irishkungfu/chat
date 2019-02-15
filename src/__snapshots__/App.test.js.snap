@@ -18,13 +18,81 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Provider
-        store={MessageListModel {}}
+      "children": <ThemeProvider
+        theme={
+          Object {
+            "main": "mediumseagreen",
+          }
+        }
       >
-        <ChatWrapper
-          store={MessageListModel {}}
-        />
-      </Provider>,
+        <Provider
+          store={
+            MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            }
+          }
+        >
+          <ChatWrapper
+            store={
+              MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              }
+            }
+          />
+        </Provider>
+      </ThemeProvider>,
       "className": "App",
     },
     "ref": null,
@@ -33,10 +101,76 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <ChatWrapper
-          store={MessageListModel {}}
-        />,
-        "store": MessageListModel {},
+        "children": <Provider
+          store={
+            MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            }
+          }
+        >
+          <ChatWrapper
+            store={
+              MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              }
+            }
+          />
+        </Provider>,
+        "theme": Object {
+          "main": "mediumseagreen",
+        },
       },
       "ref": null,
       "rendered": Object {
@@ -44,10 +178,109 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "store": MessageListModel {},
+          "children": <ChatWrapper
+            store={
+              MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              }
+            }
+          />,
+          "store": MessageListModel {
+            "awaitingMessage": "done",
+            "chatHeaderHeight": 50,
+            "chatInputHeight": 50,
+            "messages": Array [],
+            "newMessage": "",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "MessageListModel@1.keys",
+                "observers": Set {},
+              },
+              "name": "MessageListModel@1",
+              "target": [Circular],
+              "values": Map {
+                "messages" => Array [],
+                "newMessage" => "",
+                "awaitingMessage" => "done",
+                "chatInputHeight" => 50,
+                "chatHeaderHeight" => 50,
+              },
+            },
+          },
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "store": MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": [Function],
       },
       "type": [Function],
@@ -60,13 +293,81 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Provider
-          store={MessageListModel {}}
+        "children": <ThemeProvider
+          theme={
+            Object {
+              "main": "mediumseagreen",
+            }
+          }
         >
-          <ChatWrapper
-            store={MessageListModel {}}
-          />
-        </Provider>,
+          <Provider
+            store={
+              MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              }
+            }
+          >
+            <ChatWrapper
+              store={
+                MessageListModel {
+                  "awaitingMessage": "done",
+                  "chatHeaderHeight": 50,
+                  "chatInputHeight": 50,
+                  "messages": Array [],
+                  "newMessage": "",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageListModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageListModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "messages" => Array [],
+                      "newMessage" => "",
+                      "awaitingMessage" => "done",
+                      "chatInputHeight" => 50,
+                      "chatHeaderHeight" => 50,
+                    },
+                  },
+                }
+              }
+            />
+          </Provider>
+        </ThemeProvider>,
         "className": "App",
       },
       "ref": null,
@@ -75,10 +376,76 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <ChatWrapper
-            store={MessageListModel {}}
-          />,
-          "store": MessageListModel {},
+          "children": <Provider
+            store={
+              MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              }
+            }
+          >
+            <ChatWrapper
+              store={
+                MessageListModel {
+                  "awaitingMessage": "done",
+                  "chatHeaderHeight": 50,
+                  "chatInputHeight": 50,
+                  "messages": Array [],
+                  "newMessage": "",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageListModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageListModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "messages" => Array [],
+                      "newMessage" => "",
+                      "awaitingMessage" => "done",
+                      "chatInputHeight" => 50,
+                      "chatHeaderHeight" => 50,
+                    },
+                  },
+                }
+              }
+            />
+          </Provider>,
+          "theme": Object {
+            "main": "mediumseagreen",
+          },
         },
         "ref": null,
         "rendered": Object {
@@ -86,10 +453,109 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "store": MessageListModel {},
+            "children": <ChatWrapper
+              store={
+                MessageListModel {
+                  "awaitingMessage": "done",
+                  "chatHeaderHeight": 50,
+                  "chatInputHeight": 50,
+                  "messages": Array [],
+                  "newMessage": "",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageListModel@1.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageListModel@1",
+                    "target": [Circular],
+                    "values": Map {
+                      "messages" => Array [],
+                      "newMessage" => "",
+                      "awaitingMessage" => "done",
+                      "chatInputHeight" => 50,
+                      "chatHeaderHeight" => 50,
+                    },
+                  },
+                }
+              }
+            />,
+            "store": MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            },
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "store": MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         "type": [Function],

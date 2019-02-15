@@ -6,6 +6,7 @@ import { configureAdapter } from "./setupTests"
 configureAdapter()
 
 it('renders without crashing', () => {
+  // this is a workaround, since jest can't test scrollIntoView
   Element.prototype.scrollIntoView = jest.fn()
 
   shallow(<App />);

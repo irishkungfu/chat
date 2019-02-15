@@ -1,0 +1,1236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatWrapper should render correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ChatWrapper
+    store={
+      MessageListModel {
+        "awaitingMessage": "done",
+        "chatHeaderHeight": 50,
+        "chatInputHeight": 50,
+        "messages": Array [
+          MessageModel {
+            "id": 0.5,
+            "isSender": false,
+            "messageBody": "Hello.",
+            "messageType": "text",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "MessageModel@3.keys",
+                "observers": Set {},
+              },
+              "name": "MessageModel@3",
+              "target": [Circular],
+              "values": Map {
+                "messageBody" => "Hello.",
+              },
+            },
+          },
+        ],
+        "newMessage": "",
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "MessageListModel@1.keys",
+            "observers": Set {},
+          },
+          "name": "MessageListModel@1",
+          "target": [Circular],
+          "values": Map {
+            "messages" => Array [
+              MessageModel {
+                "id": 0.5,
+                "isSender": false,
+                "messageBody": "Hello.",
+                "messageType": "text",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "messageBody" => "Hello.",
+                  },
+                },
+              },
+            ],
+            "newMessage" => "",
+            "awaitingMessage" => "done",
+            "chatInputHeight" => 50,
+            "chatHeaderHeight" => 50,
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <ChatHeader
+          store={
+            MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [
+                MessageModel {
+                  "id": 0.5,
+                  "isSender": false,
+                  "messageBody": "Hello.",
+                  "messageType": "text",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageModel@3.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageModel@3",
+                    "target": [Circular],
+                    "values": Map {
+                      "messageBody" => "Hello.",
+                    },
+                  },
+                },
+              ],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [
+                    MessageModel {
+                      "id": 0.5,
+                      "isSender": false,
+                      "messageBody": "Hello.",
+                      "messageType": "text",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "MessageModel@3.keys",
+                          "observers": Set {},
+                        },
+                        "name": "MessageModel@3",
+                        "target": [Circular],
+                        "values": Map {
+                          "messageBody" => "Hello.",
+                        },
+                      },
+                    },
+                  ],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            }
+          }
+        />,
+        <ChatInput
+          handleFormSubmit={[Function]}
+          handleInputChange={[Function]}
+          store={
+            MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [
+                MessageModel {
+                  "id": 0.5,
+                  "isSender": false,
+                  "messageBody": "Hello.",
+                  "messageType": "text",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageModel@3.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageModel@3",
+                    "target": [Circular],
+                    "values": Map {
+                      "messageBody" => "Hello.",
+                    },
+                  },
+                },
+              ],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [
+                    MessageModel {
+                      "id": 0.5,
+                      "isSender": false,
+                      "messageBody": "Hello.",
+                      "messageType": "text",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "MessageModel@3.keys",
+                          "observers": Set {},
+                        },
+                        "name": "MessageModel@3",
+                        "target": [Circular],
+                        "values": Map {
+                          "messageBody" => "Hello.",
+                        },
+                      },
+                    },
+                  ],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            }
+          }
+        />,
+        <MessageList
+          store={
+            MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [
+                MessageModel {
+                  "id": 0.5,
+                  "isSender": false,
+                  "messageBody": "Hello.",
+                  "messageType": "text",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageModel@3.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageModel@3",
+                    "target": [Circular],
+                    "values": Map {
+                      "messageBody" => "Hello.",
+                    },
+                  },
+                },
+              ],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [
+                    MessageModel {
+                      "id": 0.5,
+                      "isSender": false,
+                      "messageBody": "Hello.",
+                      "messageType": "text",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "MessageModel@3.keys",
+                          "observers": Set {},
+                        },
+                        "name": "MessageModel@3",
+                        "target": [Circular],
+                        "values": Map {
+                          "messageBody" => "Hello.",
+                        },
+                      },
+                    },
+                  ],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            }
+          }
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "store": MessageListModel {
+            "awaitingMessage": "done",
+            "chatHeaderHeight": 50,
+            "chatInputHeight": 50,
+            "messages": Array [
+              MessageModel {
+                "id": 0.5,
+                "isSender": false,
+                "messageBody": "Hello.",
+                "messageType": "text",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "messageBody" => "Hello.",
+                  },
+                },
+              },
+            ],
+            "newMessage": "",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "MessageListModel@1.keys",
+                "observers": Set {},
+              },
+              "name": "MessageListModel@1",
+              "target": [Circular],
+              "values": Map {
+                "messages" => Array [
+                  MessageModel {
+                    "id": 0.5,
+                    "isSender": false,
+                    "messageBody": "Hello.",
+                    "messageType": "text",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "MessageModel@3.keys",
+                        "observers": Set {},
+                      },
+                      "name": "MessageModel@3",
+                      "target": [Circular],
+                      "values": Map {
+                        "messageBody" => "Hello.",
+                      },
+                    },
+                  },
+                ],
+                "newMessage" => "",
+                "awaitingMessage" => "done",
+                "chatInputHeight" => 50,
+                "chatHeaderHeight" => 50,
+              },
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "handleFormSubmit": [Function],
+          "handleInputChange": [Function],
+          "store": MessageListModel {
+            "awaitingMessage": "done",
+            "chatHeaderHeight": 50,
+            "chatInputHeight": 50,
+            "messages": Array [
+              MessageModel {
+                "id": 0.5,
+                "isSender": false,
+                "messageBody": "Hello.",
+                "messageType": "text",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "messageBody" => "Hello.",
+                  },
+                },
+              },
+            ],
+            "newMessage": "",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "MessageListModel@1.keys",
+                "observers": Set {},
+              },
+              "name": "MessageListModel@1",
+              "target": [Circular],
+              "values": Map {
+                "messages" => Array [
+                  MessageModel {
+                    "id": 0.5,
+                    "isSender": false,
+                    "messageBody": "Hello.",
+                    "messageType": "text",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "MessageModel@3.keys",
+                        "observers": Set {},
+                      },
+                      "name": "MessageModel@3",
+                      "target": [Circular],
+                      "values": Map {
+                        "messageBody" => "Hello.",
+                      },
+                    },
+                  },
+                ],
+                "newMessage" => "",
+                "awaitingMessage" => "done",
+                "chatInputHeight" => 50,
+                "chatHeaderHeight" => 50,
+              },
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "store": MessageListModel {
+            "awaitingMessage": "done",
+            "chatHeaderHeight": 50,
+            "chatInputHeight": 50,
+            "messages": Array [
+              MessageModel {
+                "id": 0.5,
+                "isSender": false,
+                "messageBody": "Hello.",
+                "messageType": "text",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageModel@3.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageModel@3",
+                  "target": [Circular],
+                  "values": Map {
+                    "messageBody" => "Hello.",
+                  },
+                },
+              },
+            ],
+            "newMessage": "",
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "MessageListModel@1.keys",
+                "observers": Set {},
+              },
+              "name": "MessageListModel@1",
+              "target": [Circular],
+              "values": Map {
+                "messages" => Array [
+                  MessageModel {
+                    "id": 0.5,
+                    "isSender": false,
+                    "messageBody": "Hello.",
+                    "messageType": "text",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "MessageModel@3.keys",
+                        "observers": Set {},
+                      },
+                      "name": "MessageModel@3",
+                      "target": [Circular],
+                      "values": Map {
+                        "messageBody" => "Hello.",
+                      },
+                    },
+                  },
+                ],
+                "newMessage" => "",
+                "awaitingMessage" => "done",
+                "chatInputHeight" => 50,
+                "chatHeaderHeight" => 50,
+              },
+            },
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": ComponentStyle {
+        "componentId": "sc-bZQynM",
+        "isStatic": true,
+        "rules": Array [
+          "
+    height: 500px;
+    width: 300px;
+    background: white;
+    border: 1px black solid;
+    position: relative;
+",
+        ],
+      },
+      "displayName": "styled.div",
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "styledComponentId": "sc-bZQynM",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    },
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <ChatHeader
+            store={
+              MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [
+                  MessageModel {
+                    "id": 0.5,
+                    "isSender": false,
+                    "messageBody": "Hello.",
+                    "messageType": "text",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "MessageModel@3.keys",
+                        "observers": Set {},
+                      },
+                      "name": "MessageModel@3",
+                      "target": [Circular],
+                      "values": Map {
+                        "messageBody" => "Hello.",
+                      },
+                    },
+                  },
+                ],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [
+                      MessageModel {
+                        "id": 0.5,
+                        "isSender": false,
+                        "messageBody": "Hello.",
+                        "messageType": "text",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "MessageModel@3.keys",
+                            "observers": Set {},
+                          },
+                          "name": "MessageModel@3",
+                          "target": [Circular],
+                          "values": Map {
+                            "messageBody" => "Hello.",
+                          },
+                        },
+                      },
+                    ],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              }
+            }
+          />,
+          <ChatInput
+            handleFormSubmit={[Function]}
+            handleInputChange={[Function]}
+            store={
+              MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [
+                  MessageModel {
+                    "id": 0.5,
+                    "isSender": false,
+                    "messageBody": "Hello.",
+                    "messageType": "text",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "MessageModel@3.keys",
+                        "observers": Set {},
+                      },
+                      "name": "MessageModel@3",
+                      "target": [Circular],
+                      "values": Map {
+                        "messageBody" => "Hello.",
+                      },
+                    },
+                  },
+                ],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [
+                      MessageModel {
+                        "id": 0.5,
+                        "isSender": false,
+                        "messageBody": "Hello.",
+                        "messageType": "text",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "MessageModel@3.keys",
+                            "observers": Set {},
+                          },
+                          "name": "MessageModel@3",
+                          "target": [Circular],
+                          "values": Map {
+                            "messageBody" => "Hello.",
+                          },
+                        },
+                      },
+                    ],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              }
+            }
+          />,
+          <MessageList
+            store={
+              MessageListModel {
+                "awaitingMessage": "done",
+                "chatHeaderHeight": 50,
+                "chatInputHeight": 50,
+                "messages": Array [
+                  MessageModel {
+                    "id": 0.5,
+                    "isSender": false,
+                    "messageBody": "Hello.",
+                    "messageType": "text",
+                    Symbol(mobx did run lazy initializers): true,
+                    Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                      "defaultEnhancer": [Function],
+                      "keysAtom": Atom$$1 {
+                        "diffValue": 0,
+                        "isBeingObserved": false,
+                        "isPendingUnobservation": false,
+                        "lastAccessedBy": 0,
+                        "lowestObserverState": 2,
+                        "name": "MessageModel@3.keys",
+                        "observers": Set {},
+                      },
+                      "name": "MessageModel@3",
+                      "target": [Circular],
+                      "values": Map {
+                        "messageBody" => "Hello.",
+                      },
+                    },
+                  },
+                ],
+                "newMessage": "",
+                Symbol(mobx did run lazy initializers): true,
+                Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                  "defaultEnhancer": [Function],
+                  "keysAtom": Atom$$1 {
+                    "diffValue": 0,
+                    "isBeingObserved": false,
+                    "isPendingUnobservation": false,
+                    "lastAccessedBy": 0,
+                    "lowestObserverState": 2,
+                    "name": "MessageListModel@1.keys",
+                    "observers": Set {},
+                  },
+                  "name": "MessageListModel@1",
+                  "target": [Circular],
+                  "values": Map {
+                    "messages" => Array [
+                      MessageModel {
+                        "id": 0.5,
+                        "isSender": false,
+                        "messageBody": "Hello.",
+                        "messageType": "text",
+                        Symbol(mobx did run lazy initializers): true,
+                        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                          "defaultEnhancer": [Function],
+                          "keysAtom": Atom$$1 {
+                            "diffValue": 0,
+                            "isBeingObserved": false,
+                            "isPendingUnobservation": false,
+                            "lastAccessedBy": 0,
+                            "lowestObserverState": 2,
+                            "name": "MessageModel@3.keys",
+                            "observers": Set {},
+                          },
+                          "name": "MessageModel@3",
+                          "target": [Circular],
+                          "values": Map {
+                            "messageBody" => "Hello.",
+                          },
+                        },
+                      },
+                    ],
+                    "newMessage" => "",
+                    "awaitingMessage" => "done",
+                    "chatInputHeight" => 50,
+                    "chatHeaderHeight" => 50,
+                  },
+                },
+              }
+            }
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "store": MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [
+                MessageModel {
+                  "id": 0.5,
+                  "isSender": false,
+                  "messageBody": "Hello.",
+                  "messageType": "text",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageModel@3.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageModel@3",
+                    "target": [Circular],
+                    "values": Map {
+                      "messageBody" => "Hello.",
+                    },
+                  },
+                },
+              ],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [
+                    MessageModel {
+                      "id": 0.5,
+                      "isSender": false,
+                      "messageBody": "Hello.",
+                      "messageType": "text",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "MessageModel@3.keys",
+                          "observers": Set {},
+                        },
+                        "name": "MessageModel@3",
+                        "target": [Circular],
+                        "values": Map {
+                          "messageBody" => "Hello.",
+                        },
+                      },
+                    },
+                  ],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "handleFormSubmit": [Function],
+            "handleInputChange": [Function],
+            "store": MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [
+                MessageModel {
+                  "id": 0.5,
+                  "isSender": false,
+                  "messageBody": "Hello.",
+                  "messageType": "text",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageModel@3.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageModel@3",
+                    "target": [Circular],
+                    "values": Map {
+                      "messageBody" => "Hello.",
+                    },
+                  },
+                },
+              ],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [
+                    MessageModel {
+                      "id": 0.5,
+                      "isSender": false,
+                      "messageBody": "Hello.",
+                      "messageType": "text",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "MessageModel@3.keys",
+                          "observers": Set {},
+                        },
+                        "name": "MessageModel@3",
+                        "target": [Circular],
+                        "values": Map {
+                          "messageBody" => "Hello.",
+                        },
+                      },
+                    },
+                  ],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "store": MessageListModel {
+              "awaitingMessage": "done",
+              "chatHeaderHeight": 50,
+              "chatInputHeight": 50,
+              "messages": Array [
+                MessageModel {
+                  "id": 0.5,
+                  "isSender": false,
+                  "messageBody": "Hello.",
+                  "messageType": "text",
+                  Symbol(mobx did run lazy initializers): true,
+                  Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                    "defaultEnhancer": [Function],
+                    "keysAtom": Atom$$1 {
+                      "diffValue": 0,
+                      "isBeingObserved": false,
+                      "isPendingUnobservation": false,
+                      "lastAccessedBy": 0,
+                      "lowestObserverState": 2,
+                      "name": "MessageModel@3.keys",
+                      "observers": Set {},
+                    },
+                    "name": "MessageModel@3",
+                    "target": [Circular],
+                    "values": Map {
+                      "messageBody" => "Hello.",
+                    },
+                  },
+                },
+              ],
+              "newMessage": "",
+              Symbol(mobx did run lazy initializers): true,
+              Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                "defaultEnhancer": [Function],
+                "keysAtom": Atom$$1 {
+                  "diffValue": 0,
+                  "isBeingObserved": false,
+                  "isPendingUnobservation": false,
+                  "lastAccessedBy": 0,
+                  "lowestObserverState": 2,
+                  "name": "MessageListModel@1.keys",
+                  "observers": Set {},
+                },
+                "name": "MessageListModel@1",
+                "target": [Circular],
+                "values": Map {
+                  "messages" => Array [
+                    MessageModel {
+                      "id": 0.5,
+                      "isSender": false,
+                      "messageBody": "Hello.",
+                      "messageType": "text",
+                      Symbol(mobx did run lazy initializers): true,
+                      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+                        "defaultEnhancer": [Function],
+                        "keysAtom": Atom$$1 {
+                          "diffValue": 0,
+                          "isBeingObserved": false,
+                          "isPendingUnobservation": false,
+                          "lastAccessedBy": 0,
+                          "lowestObserverState": 2,
+                          "name": "MessageModel@3.keys",
+                          "observers": Set {},
+                        },
+                        "name": "MessageModel@3",
+                        "target": [Circular],
+                        "values": Map {
+                          "messageBody" => "Hello.",
+                        },
+                      },
+                    },
+                  ],
+                  "newMessage" => "",
+                  "awaitingMessage" => "done",
+                  "chatInputHeight" => 50,
+                  "chatHeaderHeight" => 50,
+                },
+              },
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bZQynM",
+          "isStatic": true,
+          "rules": Array [
+            "
+    height: 500px;
+    width: 300px;
+    background: white;
+    border: 1px black solid;
+    position: relative;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bZQynM",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      },
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

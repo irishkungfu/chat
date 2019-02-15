@@ -12,12 +12,15 @@ const MessageStyles = styled.li`
 `
 const isSender = {
     alignSelf: "flex-end",
+    background: "red"
 }
+
+
 const isNotSender = {
     alignSelf: "flex-start"
 }
 
-const Todo = observer(({ message, order }) => (
+const Message = observer(({ message, order }) => (
     <MessageStyles style={
         Object.assign(
             {},
@@ -30,4 +33,4 @@ const Todo = observer(({ message, order }) => (
     </MessageStyles >
 ));
 
-export default Todo;
+export default Message;

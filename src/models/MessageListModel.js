@@ -1,15 +1,18 @@
+
 import { observable, action, runInAction } from "mobx"
 
 
 import MessageModel from "./MessageModel"
 
 export default class MessageListModel {
+
     @observable messages = [];
-    @observable chatInputHeight = 50
-    @observable chatHeaderHeight = 50
     @observable newMessage = ""
     @observable receivedMessage = {}
     @observable awaitingMessage = "done"
+    @observable chatInputHeight = 50 // base value, calculated value will override
+    @observable chatHeaderHeight = 50 // base value, calculated value will override
+
     /**
      * Gets the calculated height and sets required variable
      * @param {int} newHeight 
@@ -36,8 +39,13 @@ export default class MessageListModel {
      * @param {string} messageType // text, component, list - default text
      */
     @action
-    addMessage(messageBody, isSender, messageType) {
-        this.messages.push(new MessageModel(messageBody, isSender, messageType))
+    addMessage(messageBody, isSender = false, messageType = "text") {
+        console.log(`isSender = ${isSender} | typeof = ${typeof isSender}`)
+        if (typeof isSender === "boolean") {
+            this.messages.push(new MessageModel(messageBody, isSender, messageType))
+        } else {
+            throw "Parameter isSender is an invalid type"
+        }
     }
     @action
     clearMessage() {

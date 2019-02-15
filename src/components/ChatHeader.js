@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import styled from 'styled-components';
+import { observer, inject } from "mobx-react";
+
 
 const ChatHeaderWrapper = styled.div`
     border-bottom: 1px black solid;
@@ -10,17 +12,16 @@ const ChatHeaderWrapper = styled.div`
     text-align: center;
 `
 
+@observer
 class ChatHeader extends Component {
 
     componentDidMount() {
-        this.props.store.updateHeight(this.ChatHeaderWrapper.clientHeight, "input")
-
-        // this.props.store.updateChatHeaderHeight(this.ChatHeaderWrapper.clientHeight)
+        this.props.store.updateHeight(this.headerWrapper.clientHeight, "header")
     }
     render() {
         return (
             <ChatHeaderWrapper
-                ref={(ChatHeaderWrapper) => this.ChatHeaderWrapper = ChatHeaderWrapper}
+                ref={(headerWrapper) => this.headerWrapper = headerWrapper}
             >
                 Chat Tron 2000
                 </ChatHeaderWrapper>

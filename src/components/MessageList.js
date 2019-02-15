@@ -8,7 +8,6 @@ const MessageListWrapper = inject('store')(
     observer(
         styled.ul`
             height: calc(100% - ${({ store: { chatInputHeight } }) => chatInputHeight + "px"});
-            
             margin: 0;
             display: flex;
             flex-flow: column nowrap;
@@ -52,7 +51,6 @@ class MessageList extends Component {
                         this.messagesEnd = el;
                     }}
                 />
-
             </MessageListWrapper>
         )
     }

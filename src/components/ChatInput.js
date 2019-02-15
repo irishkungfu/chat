@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import styled from 'styled-components';
-import { observer } from "mobx-react";
+import { observer, inject } from "mobx-react";
 
 
 const padding = 1
@@ -36,10 +36,10 @@ const ChatButton = styled.button`
         color: red
     }
     `
+
 @observer
 class ChatInput extends Component {
     componentDidMount() {
-        // this.props.store.updateChatInputHeight(this.divElement.clientHeight)
         this.props.store.updateHeight(this.divElement.clientHeight, "input")
         this.nameInput.focus();
     }
